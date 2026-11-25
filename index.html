@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <title>测测你的灵魂对应哪位中国历史人物</title>
+  <meta name="description" content="趣味人格测试：用四十道生活化小题，看看你的气质更接近哪一位中国历史人物。纯属娱乐，仅供分享好玩。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="texture" aria-hidden="true"></div>
+  <div class="mist" aria-hidden="true"></div>
+
+  <div class="app">
+    <section id="screen-home" class="screen is-active" aria-label="测试首页">
+      <div class="sheet">
+        <span class="ornament ornament-tl" aria-hidden="true">
+          <svg viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M6 36c8-2 12-10 10-18 6 4 14 4 20-1-2 10-8 16-18 18 6 6 8 12 7 17H6V36z"/>
+            <path d="M8 14c4-6 12-8 16-8" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="ornament ornament-tr" aria-hidden="true">
+          <svg viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M6 36c8-2 12-10 10-18 6 4 14 4 20-1-2 10-8 16-18 18 6 6 8 12 7 17H6V36z"/>
+            <path d="M8 14c4-6 12-8 16-8" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="ornament ornament-bl" aria-hidden="true">
+          <svg viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M6 36c8-2 12-10 10-18 6 4 14 4 20-1-2 10-8 16-18 18 6 6 8 12 7 17H6V36z"/>
+          </svg>
+        </span>
+        <span class="ornament ornament-br" aria-hidden="true">
+          <svg viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M6 36c8-2 12-10 10-18 6 4 14 4 20-1-2 10-8 16-18 18 6 6 8 12 7 17H6V36z"/>
+          </svg>
+        </span>
+        <div class="home-inner">
+          <p class="eyebrow">灵魂史影</p>
+          <h1 class="home-title">
+            <span>测测你的灵魂</span>
+            <span class="title-sub">对应哪位中国历史人物</span>
+          </h1>
+          <p class="lead">四十道关于日常习惯和处事方式的小问题，不考历史知识，也没有标准答案。答完之后，看看你的气质更接近哪一位古人。</p>
+          <p class="disclaimer">这是趣味娱乐测试，结果仅供分享好玩，<span class="nowrap">不构成心理或命运判断。</span></p>
+          <button type="button" class="btn btn-primary" id="start-btn">开始测试</button>
+          <p class="home-meta">约四分钟 · 可返回修改</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="screen-quiz" class="screen" hidden aria-label="答题">
+      <div class="sheet quiz-sheet">
+        <div class="quiz-head">
+          <div class="quiz-top">
+            <div class="progress-label" id="progress-label">第 1 / 40 题</div>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+        </div>
+        <div class="question-stage">
+          <h2 class="question-text" id="question-text"></h2>
+        </div>
+        <div class="options" id="options"></div>
+        <div class="quiz-foot">
+          <button type="button" class="btn btn-ghost" id="back-btn" disabled>返回上一题</button>
+          <span class="hint">选定后进入下一题</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="screen-result" class="screen" hidden aria-label="测试结果">
+      <div class="result-wrap">
+        <article class="result-card" id="result-card">
+          <div class="result-frame" aria-hidden="true"></div>
+          <span class="ornament ornament-tl" aria-hidden="true">
+            <svg viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M6 36c8-2 12-10 10-18 6 4 14 4 20-1-2 10-8 16-18 18 6 6 8 12 7 17H6V36z"/>
+            </svg>
+          </span>
+          <span class="ornament ornament-tr" aria-hidden="true">
+            <svg viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M6 36c8-2 12-10 10-18 6 4 14 4 20-1-2 10-8 16-18 18 6 6 8 12 7 17H6V36z"/>
+            </svg>
+          </span>
+          <span class="ornament ornament-bl" aria-hidden="true">
+            <svg viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M6 36c8-2 12-10 10-18 6 4 14 4 20-1-2 10-8 16-18 18 6 6 8 12 7 17H6V36z"/>
+            </svg>
+          </span>
+          <span class="ornament ornament-br" aria-hidden="true">
+            <svg viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M6 36c8-2 12-10 10-18 6 4 14 4 20-1-2 10-8 16-18 18 6 6 8 12 7 17H6V36z"/>
+            </svg>
+          </span>
+          <div class="result-card-inner">
+            <p class="result-kicker">你的灵魂更接近</p>
+            <div class="result-name-block">
+              <h2 class="result-name" id="result-name"></h2>
+            </div>
+            <div class="result-type-row">
+              <div class="result-type" id="result-type"></div>
+              <div class="seal" aria-hidden="true"><span id="seal-text"></span></div>
+            </div>
+            <div class="divider" aria-hidden="true"><span class="divider-mark">◉</span></div>
+            <p class="tagline" id="tagline"></p>
+            <div class="result-sections">
+              <section class="result-block">
+                <h3>性格特点</h3>
+                <p id="result-traits"></p>
+              </section>
+              <section class="result-block">
+                <h3>匹配理由</h3>
+                <p id="result-reason"></p>
+              </section>
+              <section class="result-block">
+                <h3>隐藏优势</h3>
+                <p id="result-strength"></p>
+              </section>
+              <section class="result-block">
+                <h3>趣味彩蛋</h3>
+                <p id="result-easter"></p>
+              </section>
+            </div>
+            <p class="result-card-foot">趣味娱乐测试 · 结果仅供分享好玩<br>不构成心理或命运判断</p>
+          </div>
+        </article>
+        <div class="result-actions">
+          <p class="share-hint">截取上方卡片，即可发到小红书或朋友圈</p>
+          <button type="button" class="btn btn-on-dark" id="retake-btn">重新测试</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
